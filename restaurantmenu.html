@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Restaurant Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/5c08699f58.js" crossorigin="anonymous"></script>
+  <script src="restaurant.js"></script>
+  <style>
+    table{
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container-fluid">
+  <div class="row" id="accordion">
+    <div class="col-3 bg-dark">
+      <div class="rounded-sm w-30 h-30">
+          <h1 class="mt-4 bg-dark text-white">OUR MENU
+          <img src="res-logo.jpg" class="rounded " alt="Restaurant Logo"></h1>
+      </div>  
+      <div class="list-group list-group-flush">
+        <a href="#panel-1" class="list-group-item list-group-item-action font-weight-bold bg-dark text-white" data-toggle="collapse">&#8594HOT-DRINK</a>
+        <a href="#panel-2" class="list-group-item list-group-item-action font-weight-bold bg-dark text-white" data-toggle="collapse">&#8594COLD-DRINK</a>
+        <a href="#panel-3" class="list-group-item list-group-item-action font-weight-bold bg-dark text-white" data-toggle="collapse">&#8594BAKERY</a>
+        <a href="#panel-4" class="list-group-item list-group-item-action font-weight-bold bg-dark text-white" data-toggle="collapse">&#8594SEAFOODS</a>
+        <a href="#panel-5" class="list-group-item list-group-item-action font-weight-bold bg-dark text-white" data-toggle="collapse">&#8594OTHER CURRIES</a>
+      </div>
+    </div>
+    
+    <div class="col-4 bg-dark">
+    
+      <div class="input-group form-sm mt-4 bg-dark pl-3 pr-3">
+        <input class="form-control mt-3 mb-3 rounded" type="text" placeholder="Search our menu..">
+        <div class="input-group-append mt-3 mb-3">
+          <span class="input-group-text"><i class="fa fa-search"></i></span>
+        </div>
+      </div>
+      
+      <!-------Hot-Drink---------->
+      <div id="panel-1" class="collapse" data-parent="#accordion">
+      <div class="bg-white">
+        <h2 class="mt-2 text-dark">ENTREES</h2>
+      </div>
+          <div class="card mb-3" style="max-width: 540px;">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img src="black-tea.jpg" class="card-img mt-4" alt="Black tea">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <span class="float-right font-weight-bold float-top bg-dark text-danger">$1.00</span>
+                  <h5 class="card-title">Black Tea</h5>
+                  <p class="card-text">This is a black tea.</p>
+                  <button id="b1" class="btn btn-danger text-white float-right float-bottom mb-3">&plus;&nbsp;ORDER</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mb-3" style="max-width: 540px;">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img src="americano.jpg" class="card-img mt-2 mb-2" alt="Americano">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <span class="float-right font-weight-bold float-top bg-dark text-danger">$3.00</span>
+                  <h5 class="card-title">Americano</h5>
+                  <p class="card-text">This is a americano.</p>
+                  <button id="b2" class="btn btn-danger text-white float-right float-bottom mb-3">&plus;&nbsp;ORDER</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mb-3" style="max-width: 540px;">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img src="cuppicino.jpg" class="card-img mt-4" alt="cuppicino">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <span class="float-right font-weight-bold float-top bg-dark text-danger">$1.00</span>
+                  <h5 class="card-title">Cuppicino</h5>
+                  <p class="card-text">This is a cuppicino.</p>
+                  <button id="b3" class="btn btn-danger text-white float-right float-bottom mb-3">&plus;&nbsp;ORDER</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+
+        <div class="card mb-3" style="max-width: 540px;">
+          <div class="row no-gutters">
+            <div class="col-md-4">
+              <img src="green-tea.jpg" class="card-img mt-4" alt="Green tea">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <span class="float-right font-weight-bold float-top bg-dark text-danger">$2.00</span>
+                <h5 class="card-title">Green Tea</h5>
+                <p class="card-text">This is a green tea for your health.</p>
+                <button id="b4" class="btn btn-danger text-white float-right float-bottom mb-3">&plus;&nbsp;ORDER</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!---Cold drink--------->
+      <div id="panel-2" class="collapse" data-parent="#accordion">
+        <div class="bg-white">
+          <h2 class="mt-2 text-dark">ENTREES</h2>
+        </div>
+        
+          <div class="card mb-3" style="max-width: 540px;">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img src="bubble-tea.jpg" class="card-img mt-4" alt="Bubble tea">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <span class="float-right font-weight-bold float-top bg-dark text-danger">$2.00</span>
+                  <h5 class="card-title">Bubble Tea</h5>
+                  <p class="card-text">This is one of our famous menu.</p>
+                  <button id="b5" class="btn btn-danger text-white float-right float-bottom mb-3">&plus;&nbsp;ORDER</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="card mb-3" style="max-width: 540px;">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img src="milkshake.jpg" class="card-img mt-4" alt="milkshake">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <span class="float-right font-weight-bold float-top bg-dark text-danger">$2.00</span>
+                  <h5 class="card-title">Milk Shake</h5>
+                  <p class="card-text">This is one of our famous menu.</p>
+                  <button id="b6" class="btn btn-danger text-white float-right float-bottom mb-3">&plus;&nbsp;ORDER</button>
+                </div>
+              </div>
+            </div>
+          </div>  
+
+          <div class="card mb-3" style="max-width: 540px;">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img src="lemonjuice.jpg" class="card-img mt-4" alt="Lemon">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <span class="float-right font-weight-bold float-top bg-dark text-danger">$1.00</span>
+                  <h5 class="card-title">Lemon Juice</h5>
+                  <p class="card-text">Feel the nature with sour.</p>
+                  <button id="b7"class="btn btn-danger text-white float-right float-bottom mb-2">&plus;&nbsp;ORDER</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mb-3" style="max-width: 540px;">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img src="orangejuice.jpg" class="card-img mt-4 " alt="orange">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <span class="float-right font-weight-bold float-top bg-dark text-danger">$1.00</span>
+                  <h5 class="card-title">Orange Juice</h5>
+                  <p class="card-text">100% nature.No chemical.</p>
+                  <button id="b8" class="btn btn-danger text-white float-right float-bottom mb-3">&plus;&nbsp;ORDER</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!----Bakery-------->
+        <div id="panel-3" class="collapse" data-parent="#accordion">
+          <div class="bg-white">
+            <h2 class="mt-2 text-dark">ENTREES</h2>
+          </div>
+          <div class="card mb-3" style="max-width: 540px;">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img src="pizza.jpg" class="card-img mt-4" alt="pizza">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <span class="float-right font-weight-bold float-top bg-dark text-danger">$4.00</span>
+                  <h5 class="card-title">Pizza</h5>
+                  <p class="card-text">Enjoy your lunch with pizza.</p>
+                  <button id="b9" class="btn btn-danger text-white float-right float-bottom mb-3">&plus;&nbsp;ORDER</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mb-3" style="max-width: 540px;">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img src="hamburger.jpg" class="card-img mt-4" alt="Burger">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <span class="float-right font-weight-bold float-top bg-dark text-danger">$3.00</span>
+                  <h5 class="card-title">Hamburger</h5>
+                  <p class="card-text"><span class="text-uppercase font-weight-bold">MORE BIG.</span>More cheap$$$$.</p>
+                  <button id="b10" class="btn btn-danger text-white float-right float-bottom mb-3">&plus;&nbsp;ORDER</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mb-3" style="max-width: 540px;">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img src="donut.jpg" class="card-img mt-4" alt="Donut">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <span class="float-right font-weight-bold float-top bg-dark text-danger">$5.00</span>
+                  <h5 class="card-title">Donuts</h5>
+                  <p class="card-text">Delicious,fresh and clean.</p>
+                  <button id="b11" class="btn btn-danger text-white float-right float-bottom mb-3">&plus;&nbsp;ORDER</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mb-3" style="max-width: 540px;">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img src="cookies.jpg" class="card-img mt-4" alt="cookies">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <span class="float-right font-weight-bold float-top bg-dark text-danger">$5.00</span>
+                  <h5 class="card-title">Cookies</h5>
+                  <p class="card-text">Delicious,fresh and clean.</p>
+                  <button id="b12" class="btn btn-danger text-white float-right float-bottom mb-3">&plus;&nbsp;ORDER</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+        <!----SeaFoods-------->
+        <div id="panel-4" class="collapse" data-parent="#accordion">
+          <div class="bg-white">
+            <h2 class="mt-2 text-dark">ENTREES</h2>
+          </div>
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img src="tom-yum.jpg" class="card-img mt-4" alt="tomyum">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <span class="float-right font-weight-bold float-top bg-dark text-danger">$8.00</span>
+                    <h5 class="card-title ">Tom Yum</h5>
+                    <p class="card-text">Tom yum with sea foods....</p>
+                    <button id="b13" class="btn btn-danger text-white float-right float-bottom mb-3">&plus;&nbsp;ORDER</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img src="king-crab.jpg" class="card-img mt-4" alt="kingcrab">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <span class="float-right font-weight-bold float-top bg-dark text-danger">$9.00</span>
+                    <h5 class="card-title ">King Crab</h5>
+                    <p class="card-text">Feel the taste of king.</p>
+                    <button id="b14" class="btn btn-danger text-white float-right float-bottom mt-3">&plus;&nbsp;ORDER</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img src="fried-orysters.jpg" class="card-img mt-2" alt="oryster">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <span class="float-right font-weight-bold float-top bg-dark text-danger">$8.00</span>
+                    <h5 class="card-title ">Fried Oryster</h5>
+                    <p class="card-text">Very crispy and fresh.</p>
+                    <button id="b15" class="btn btn-danger text-white float-right float-bottom mb-3">&plus;&nbsp;ORDER</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img src="crawfish.jpg" class="card-img mt-4" alt="crawfish">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <span class="float-right font-weight-bold float-top bg-dark text-danger">$7.00</span>
+                    <h5 class="card-title ">Fried Crawfish</h5>
+                    <p class="card-text">Very crispy and fresh.</p>
+                    <button id="b16" class="btn btn-danger text-white float-right float-bottom mb-3">&plus;&nbsp;ORDER</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <!------Other Curries------>
+        <div id="panel-5" class="collapse" data-parent="#accordion">
+          <div class="bg-white">
+            <h2 class="mt-2 text-dark">ENTREES</h2>
+          </div>
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img src="chicken.jpg" class="card-img mt-3" alt="chicken">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <span class="float-right font-weight-bold float-top bg-dark text-danger">$8.00</span>
+                    <h5 class="card-title ">Chicken Curry</h5>
+                    <p class="card-text">The best curry ever...</p>
+                    <button id="b17" class="btn btn-danger text-white float-right float-bottom mb-2">&plus;&nbsp;ORDER</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img src="poak.jpg" class="card-img mt-3" alt="Poak">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <span class="float-right font-weight-bold float-top bg-dark text-danger">$8.00</span>
+                    <h5 class="card-title ">Poak Curry</h5>
+                    <p class="card-text">Poak curry(Chinese style)..</p>
+                    <button id="b18" class="btn btn-danger text-white float-right float-bottom mb-2">&plus;&nbsp;ORDER</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img src="beef.jpg" class="card-img mt-3" alt="beef">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <span class="float-right font-weight-bold float-top bg-dark text-danger">$8.00</span>
+                    <h5 class="card-title ">Beef Curry</h5>
+                    <p class="card-text">Indian style curry for you.</p>
+                    <button id="b19" class="btn btn-danger text-white float-right float-bottom mb-2">&plus;&nbsp;ORDER</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img src="vegetables.jpg" class="card-img mt-4" alt="vegetables">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <span class="float-right font-weight-bold float-top bg-dark text-danger">$5.00</span>
+                    <h5 class="card-title ">Vegetables Salad</h5>
+                    <p class="card-text">Salad of the nature.(All in one)</p>
+                    <button id="b20" class="btn btn-danger text-white float-right float-bottom mb-3">&plus;&nbsp;ORDER</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img src="egg.jpg" class="card-img mt-4" alt="egg">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <span class="float-right font-weight-bold float-top bg-dark text-danger">$6.00</span>
+                    <h5 class="card-title ">Egg Curry</h5>
+                    <p class="card-text">Egg curry with great sweet smell masala.</p>
+                    <button id="b21" class="btn btn-danger text-white float-right float-bottom mb-3">&plus;&nbsp;ORDER</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>  
+      </div>
+    <div class="col-5 bg-dark">
+      <table class="table table-borderless">
+        <thead class="thead-light">
+          <tr>
+            <th>Name</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody id="tbod" class="text-dark">
+          
+        </tbody>
+        <tfoot class="text-dark">
+          <tr class="table-light">
+            <td>Total</td>
+            <td><i id="foot" class="fa fa-dollar"></i></td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+  </div>
+
+  <script>
+    
+  </script>
+  </body>
+</html>
